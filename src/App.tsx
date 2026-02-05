@@ -1,21 +1,53 @@
 import './App.css'
 
+import { useState } from 'react';
+
+import questions from "./data/questions.json";
+
 import { Main } from "./components/Main";
 import { Intro } from "./components/Intro";
 import { Button } from "./components/Button";
 
 function App() {
+  // State to handle question to display
+  const [currentQuestion, setCurrentQuestion] = useState<number>(-1); // -1 means show intro page
 
   const handleClick = () => {
-    console.log("Hi");
+    if (currentQuestion < questions.question.length) {
+      // Increment question
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      // currentQuestion === questions.question.lenght => Must be on result page
+      setCurrentQuestion(-1);
+    }
+
   }
 
-  return (
-    <Main>
-      <Intro />
-      <Button clickhandler={handleClick} text="Start veilderen" />
-    </Main>
-  )
+  if (currentQuestion === -1) {
+    return (
+      <Main>
+        <Intro />
+        <Button clickhandler={handleClick} text="Start veilderen" />
+      </Main>
+    )
+  } else if (currentQuestion < questions.question.length) {
+    return (
+      <Main>
+        <p>Question {currentQuestion}</p>
+        <Button clickhandler={handleClick} text="Neste" />
+      </Main>
+
+    )
+  } else {
+    return (
+      <Main>
+        <p>Your results are</p>
+        <Button clickhandler={handleClick} text="Start på nytt" />
+      </Main>
+
+    )
+  }
+
 }
 
 export default App
