@@ -1,0 +1,115 @@
+{
+  "question": [
+    {
+      "number": 1,
+      "text": "Hva brukes KI-løsningen hovedsakelig til?",
+      "instruction": "Velg det alternativet som passer best.",
+      "options": [
+        {
+          "text": "Forbedre eller automatisere interne prosesser (for eksempel sortering av e-post, anbefaling av innhold, analyse av data)",
+          "points": 1
+        },
+        {
+          "text": "Generere innhold for brukere (tekst, bilder, video eller lignende)",
+          "points": 2
+        },
+        {
+          "text": "Gi beslutningsstøtte eller automatiserte vurderinger om enkeltpersoner",
+          "points": 3
+        },
+        {
+          "text": "Analysere eller rangere personer (for eksempel scoring, profilering eller prioritering)",
+          "points": 3
+        },
+        {
+          "text": "Overvåking eller identifisering av personer (for eksempel ansiktsgjenkjenning)",
+          "points": 3
+        },
+        {
+          "text": "Annet / usikker",
+          "points": 0
+        },
+        {
+          "text": "Max test",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "text": "Brukes løsningen hovedsakelig innenfor ett eller flere av følgende områder?",
+      "instruction": "Dersom flere er relevante, velg det området som er mest sentralt for KI-løsningen.",
+      "options": [
+        {
+          "text": "Rekruttering og arbeidsliv",
+          "points": 3
+        },
+        {
+          "text": "Utdanning eller opptak",
+          "points": 3
+        },
+        {
+          "text": "Drift av kritisk infrastruktur",
+          "points": 3
+        },
+        {
+          "text": "Rettssystemet eller politiarbeid",
+          "points": 3
+        },
+        {
+          "text": "Tilgang til viktige tjenester (for eksempel kreditt, velferd eller forsikring)",
+          "points": 3
+        },
+        {
+          "text": "Ingen av disse",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "text": "Hvordan påvirker løsningen enkeltpersoner?",
+      "options": [
+        {
+          "text": "Den har ingen direkte betydning for rettigheter eller tilgang til tjenester",
+          "points": 1
+        },
+        {
+          "text": "Den gir anbefalinger eller støtte, men mennesker tar endelig beslutning",
+          "points": 2
+        },
+        {
+          "text": "Den tar eller påvirker beslutninger som kan få rettslige eller tilsvarende virkninger",
+          "points": 3
+        },
+        {
+          "text": "Usikker",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "text": "Innebærer løsningen noe av det følgende?",
+      "bullets": [
+        "Sosial poengssetting av personer",
+        "Skadelig påvirkning av menneskers atferd eller underbevissthet",
+        "Sanntids overvåking eller identifisering av personer ved bruk av biometriske data (for eksempel ansiktsgjenkjenning i offentlige rom)"
+      ],
+      "options": [
+        {
+          "text": "Ja",
+          "points": 4
+        },
+        {
+          "text": "Nei",
+          "points": 1
+        },
+        {
+          "text": "Usikker",
+          "points": 0
+        }
+      ]
+    }
+  ]
+}

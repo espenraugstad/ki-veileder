@@ -1,0 +1,321 @@
+{
+    "results": [
+        {
+            "id": "unacceptable-risk",
+            "title": "RESULTAT - UAKSEPTABEL RISIKO (FORBUDT KI)",
+            "riskLevel": 4,
+            "blocks": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "RESULTAT - UAKSEPTABEL RISIKO (FORBUDT KI)"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "sosial poengsetting",
+                        "skadelig påvirkning av menneskers atferd eller underbevissthet",
+                        "sanntids biometrisk overvåking i offentlige rom i de fleste tilfeller"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Slike KI-systemer er i utgangspunktet forbudt."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Virksomheten bør:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "stanse videre bruk av løsningen",
+                        "kartlegge omfang og konsekvenser",
+                        "sette seg grundig inn i regelverket"
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Videre lesning"
+                },
+                {
+                    "type": "link",
+                    "text": "Forbudte KI-systemer - oversikt:",
+                    "url": "https://www.nkom.no/kunstig-intelligens/ki-forordningen/forbudt-ki"
+                },
+                {
+                    "type": "link",
+                    "text": "Grunnleggende rettigheter og KI:",
+                    "url": "https://www.nkom.no/kunstig-intelligens/rettigheter-og-ki"
+                },
+                {
+                    "type": "link",
+                    "text": "EU-kommisjonens oversikt over KI-forordningen:",
+                    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+                }
+            ]
+        },
+        {
+            "id": "high-risk",
+            "title": "RESULTAT - HØYRISIKO-KI",
+            "riskLevel": 3,
+            "blocks": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "RESULTAT - HØYRISIKO-KI"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Basert på svarene dine kan løsningen falle inn under høyrisiko-kategori i KI-forordningen."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Dette gjelder særlig KI-systemer som brukes innen kritiske bruksområder, for eksempel:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "arbeidsliv og rekruttering",
+                        "utdanning",
+                        "kritisk infrastruktur",
+                        "rettssystemet",
+                        "tilgang til viktige tjenester"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "For høyrisiko-KI stilles det strenge krav til blant annet:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "risikovurdering",
+                        "kvalitet på treningsdata",
+                        "dokumentasjon og sporbarhet",
+                        "menneskelig kontroll",
+                        "informasjon til brukere"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Virksomheten bør blant annet:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "gjennomføre en systematisk risikovurdering",
+                        "etablere rutiner for internkontroll",
+                        "dokumentere hvordan KI-systemet fungerer og brukes"
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Videre steg og veiledning"
+                },
+                {
+                    "type": "link",
+                    "text": "Krav til høyrisiko-KI",
+                    "url": "https://www.nkom.no/kunstig-intelligens/ki-forordningen/hoyrisiko"
+                },
+                {
+                    "type": "link",
+                    "text": "Sjekkliste for etterlevelse",
+                    "url": "https://www.nkom.no/kunstig-intelligens/veiledning/sjekkliste-hoyrisiko"
+                },
+                {
+                    "type": "link",
+                    "text": "Internkontroll og dokumentasjon",
+                    "url": "https://www.nkom.no/kunstig-intelligens/ansvarlig-bruk"
+                }
+            ]
+        },
+        {
+            "id": "limited-risk",
+            "title": "RESULTAT - KI MED BEGRENSET RISIKO",
+            "riskLevel": 2,
+            "blocks": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "RESULTAT - KI MED BEGRENSET RISIKO"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Basert på svarene dine kan løsningen falle inn under begrenset risikokategori."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Dette gjelder ofte KI-systemer der brukere samhandler direkte med løsningen, for eksempel:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "chatboter",
+                        "generative tjenester som lager tekst eller bilder"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Her stiller KI-forordningen krav om transparens, slik at brukeren forstår at de samhandler med KI."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Dette kan blant annet innebære:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "tydelig merking av KI-generert innhold",
+                        "informasjon til brukere om at løsningen er KI-basert"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Virksomheten bør:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "gjennomgå hvordan KI-løsningen presenteres for brukere",
+                        "sikre korrekt og tydelig merking",
+                        "dokumentere hvordan transparenskravene oppfylles"
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Videre lesning"
+                },
+                {
+                    "type": "link",
+                    "text": "Transparenskrav for KI",
+                    "url": "https://www.nkom.no/kunstig-intelligens/ki-forordningen/transparens"
+                },
+                {
+                    "type": "link",
+                    "text": "Veiledning for generativ KI",
+                    "url": "https://www.nkom.no/kunstig-intelligens/generativ-ki"
+                }
+            ]
+        },
+        {
+            "id": "minimal-risk",
+            "title": "RESULTAT - MINIMAL ELLER INGEN RISIKO",
+            "riskLevel": 1,
+            "blocks": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "RESULTAT - MINIMAL ELLER INGEN RISIKO"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Basert på svarene dine ser løsningen ut til å falle innenfor minimal eller ingen risikokategori."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Dette gjelder for eksempel KI brukt til:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "spill",
+                        "anbefalingssystemer",
+                        "spamfiltre"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Her stilles det normalt ingen spesifikke regulatoriske krav."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Det anbefales likevel å følge god praksis for ansvarlig bruk av KI."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Virksomheten bør:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "vurdere etiske retningslinjer for KI-bruk",
+                        "sikre god informasjonssikkerhet",
+                        "følge anbefalinger for ansvarlig teknologi"
+                    ]
+                },
+                {
+                    "type": "heading",
+                    "level": 3,
+                    "text": "Videre lesning"
+                },
+                {
+                    "type": "link",
+                    "text": "Generell oversikt over KI-forordningen",
+                    "url": "https://www.nkom.no/kunstig-intelligens/ki-forordningen"
+                },
+                {
+                    "type": "link",
+                    "text": "Anbefalinger for ansvarlig KI",
+                    "url": "https://www.nkom.no/kunstig-intelligens/ansvarlig-bruk"
+                }
+            ]
+        },
+        {
+            "id": "uncertain",
+            "title": "RESULTAT - USIKKER",
+            "riskLevel": 0,
+            "blocks": [
+                {
+                    "type": "heading",
+                    "level": 2,
+                    "text": "RESULTAT - USIKKER"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Basert på svarene dine kan vi ikke gi en tydelig indikasjon på risikonivå."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Noen KI-systemer kan falle mellom kategorier eller ha særskilte egenskaper som krever nærmere vurdering."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Virksomheten bør:"
+                },
+                {
+                    "type": "list",
+                    "style": "unordered",
+                    "items": [
+                        "gjennomgå bruksområdet grundigere",
+                        "sette seg inn i relevant veiledning",
+                        "eventuelt ta kontakt for rådgivning"
+                    ]
+                },
+                {
+                    "type": "link",
+                    "text": "Finn riktig veiledning for din løsning",
+                    "url": "https://www.nkom.no/kunstig-intelligens/veiledning"
+                },
+                {
+                    "type": "link",
+                    "text": "Kontakt veiledningstjenesten",
+                    "url": "https://www.nkom.no/kontakt"
+                }
+            ]
+        }
+    ]
+}
