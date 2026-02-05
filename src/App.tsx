@@ -7,6 +7,7 @@ import questions from "./data/questions.json";
 import { Main } from "./components/Main";
 import { Intro } from "./components/Intro";
 import { Button } from "./components/Button";
+import { DisplayQuestion } from './components/DisplayQuestion';
 
 function App() {
   // State to handle question to display
@@ -33,7 +34,7 @@ function App() {
   } else if (currentQuestion < questions.question.length) {
     return (
       <Main>
-        <p>Question {currentQuestion}</p>
+        <DisplayQuestion question={questions.question[currentQuestion]}/>
         <Button clickhandler={handleClick} text="Neste" />
       </Main>
 
