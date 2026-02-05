@@ -1,6 +1,6 @@
 import './App.css'
 
-import { useState } from 'react';
+import { useState, type ChangeEvent } from 'react';
 
 import questions from "./data/questions.json";
 
@@ -24,6 +24,10 @@ function App() {
 
   }
 
+  const handleSelection = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log(event.target);
+  }
+
   if (currentQuestion === -1) {
     return (
       <Main>
@@ -34,7 +38,7 @@ function App() {
   } else if (currentQuestion < questions.question.length) {
     return (
       <Main>
-        <DisplayQuestion question={questions.question[currentQuestion]}/>
+        <DisplayQuestion question={questions.question[currentQuestion]} handleSelection={handleSelection}/>
         <Button clickhandler={handleClick} text="Neste" />
       </Main>
 
