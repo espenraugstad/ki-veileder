@@ -1,11 +1,20 @@
 import './App.css'
 
+import { Main } from "./components/Main";
+import { Intro } from "./components/Intro";
+import { Button } from "./components/Button";
+
 function App() {
-  
+
+  const handleClick = () => {
+    console.log("Hi");
+  }
+
   return (
-    <>
-      <h1 className='text-3xl font-bold'>Hello World</h1>
-    </>
+    <Main>
+      <Intro />
+      <Button clickhandler={handleClick} text="Start veilderen" />
+    </Main>
   )
 }
 
