@@ -8,24 +8,48 @@ import { Main } from "./components/Main";
 import { Intro } from "./components/Intro";
 import { Button } from "./components/Button";
 import { DisplayQuestion } from './components/DisplayQuestion';
+import { DisplayResult } from "./components/DisplayResult";
 
 function App() {
   // State to handle question to display
   const [currentQuestion, setCurrentQuestion] = useState<number>(-1); // -1 means show intro page
 
+  // State to track the score from the current question
+  const [currentScore, setCurrentScore] = useState<number>(-1);
+
+  // State to keep track of the maximum score from any question
+  const [maxScore, setMaxScore] = useState<number>(-1);
+
   const handleClick = () => {
     if (currentQuestion < questions.question.length) {
       // Increment question
       setCurrentQuestion(currentQuestion + 1);
+
+      // Update max score
+      if (currentScore > maxScore) {
+        setMaxScore(currentScore);
+      }
+
+      // Check if current score is 4, then the guide is finished
+      if (currentScore === 4) {
+        setCurrentQuestion(questions.question.length);
+      }
+
     } else {
       // currentQuestion === questions.question.lenght => Must be on result page
-      setCurrentQuestion(-1);
+      resetStates();
     }
 
   }
 
+  function resetStates() {
+    setCurrentQuestion(-1);
+    setCurrentScore(-1);
+    setMaxScore(-1);
+  }
+
   const handleSelection = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log(event.target);
+    setCurrentScore(parseInt(event.target.value));
   }
 
   if (currentQuestion === -1) {
@@ -38,7 +62,7 @@ function App() {
   } else if (currentQuestion < questions.question.length) {
     return (
       <Main>
-        <DisplayQuestion question={questions.question[currentQuestion]} handleSelection={handleSelection}/>
+        <DisplayQuestion question={questions.question[currentQuestion]} handleSelection={handleSelection} />
         <Button clickhandler={handleClick} text="Neste" />
       </Main>
 
@@ -46,7 +70,7 @@ function App() {
   } else {
     return (
       <Main>
-        <p>Your results are</p>
+        <DisplayResult score={maxScore} />
         <Button clickhandler={handleClick} text="Start på nytt" />
       </Main>
 

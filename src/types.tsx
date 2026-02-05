@@ -13,11 +13,18 @@ export interface Question {
 }
 
 // Results
-export type ContentBlock = 
-| HeadingBlock 
-| ParagraphBlock 
-| ListBlock 
-| LinkBlock;
+export interface Result {
+    id: string,
+    title: string,
+    riskLevel: number,
+    blocks: ContentBlock[]
+}
+
+export type ContentBlock =
+    | HeadingBlock
+    | ParagraphBlock
+    | ListBlock
+    | LinkBlock;
 
 export interface HeadingBlock {
     type: "heading",

@@ -1,6 +1,6 @@
 export function Intro() {
     return (
-        <section className="my-4">
+        <section className="my-4 px-4">
             <p className="my-4">Dette er en forenklet veileder basert på KI-forordningens risikobaserte modell.</p>
             <p className="my-4">Resultatet er veiledende og erstatter ikke juridisk vurdering.</p>
             <p className="my-4">Formålet er å hjelpe virksomheter med å få en indikasjon på hvilke krav som mest sannsynlig
