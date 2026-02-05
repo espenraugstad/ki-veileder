@@ -21,6 +21,11 @@ function App() {
   const [maxScore, setMaxScore] = useState<number>(-1);
 
   const handleClick = () => {
+    // User can't move on unless they have selected an option.
+    if(currentScore < 0 && currentQuestion > -1 && currentQuestion < questions.question.length){
+      alert('Du må velge et svaralternativ før du kan gå videre');
+      return;
+    }
     if (currentQuestion < questions.question.length) {
       // Increment question
       setCurrentQuestion(currentQuestion + 1);
@@ -34,6 +39,9 @@ function App() {
       if (currentScore === 4) {
         setCurrentQuestion(questions.question.length);
       }
+
+      // Finally, reset currentScore to -1 so that user can't move on unless they select a new score
+      setCurrentScore(-1);
 
     } else {
       // currentQuestion === questions.question.lenght => Must be on result page
