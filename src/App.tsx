@@ -9,6 +9,7 @@ import { Intro } from "./components/Intro";
 import { Button } from "./components/Button";
 import { DisplayQuestion } from './components/DisplayQuestion';
 import { DisplayResult } from "./components/DisplayResult";
+import { DisplayWarning } from './components/DisplayWarning';
 
 function App() {
   // State to handle question to display
@@ -20,12 +21,26 @@ function App() {
   // State to keep track of the maximum score from any question
   const [maxScore, setMaxScore] = useState<number>(-1);
 
+  // State to hide or show warning
+  const [showWarning, setShowWarning] = useState<boolean>(false);
+
+
+  /*
+   TODO:
+    * Fjern maxtest
+    * 
+  */
+
   const handleClick = () => {
     // User can't move on unless they have selected an option.
-    if(currentScore < 0 && currentQuestion > -1 && currentQuestion < questions.question.length){
-      alert('Du må velge et svaralternativ før du kan gå videre');
+    if (currentScore < 0 && currentQuestion > -1 && currentQuestion < questions.question.length) {
+      //alert('Du må velge et svaralternativ før du kan gå videre');
+      setShowWarning(true);
       return;
     }
+
+
+
     if (currentQuestion < questions.question.length) {
       // Increment question
       setCurrentQuestion(currentQuestion + 1);
@@ -47,7 +62,6 @@ function App() {
       // currentQuestion === questions.question.lenght => Must be on result page
       resetStates();
     }
-
   }
 
   function resetStates() {
@@ -57,6 +71,9 @@ function App() {
   }
 
   const handleSelection = (event: ChangeEvent<HTMLInputElement>) => {
+    if (showWarning) {
+      setShowWarning(false);
+    }
     setCurrentScore(parseInt(event.target.value));
   }
 
@@ -71,6 +88,7 @@ function App() {
     return (
       <Main>
         <DisplayQuestion question={questions.question[currentQuestion]} handleSelection={handleSelection} />
+        <DisplayWarning show={showWarning} />
         <Button clickhandler={handleClick} text="Neste" />
       </Main>
 

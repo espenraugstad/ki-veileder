@@ -19,7 +19,7 @@ function renderHeading(block: HeadingBlock, index: number) {
 
 export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
     return (
-        <>
+        <div className="px-4">
             {blocks.map((block: ContentBlock, index: number) => {
                 switch (block.type) {
                     case "heading":
@@ -52,6 +52,6 @@ export function ContentRenderer({ blocks }: { blocks: ContentBlock[] }) {
                         return <p key={index}>Fant ikke blokktypen.</p>
                 }
             })}
-        </>
+        </div>
     )
 }
