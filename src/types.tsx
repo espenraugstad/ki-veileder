@@ -12,7 +12,7 @@ export interface Question {
     options: QuestionOption[],
 }
 
-// Results
+// Results and rendering
 export interface Result {
     id: string,
     title: string,

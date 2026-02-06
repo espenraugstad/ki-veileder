@@ -59,6 +59,10 @@
         {
           "text": "Ingen av disse",
           "points": 1
+        },
+        {
+          "text": "Usikker (OBS! Dette alternativer er kun for testing)",
+          "points": 0
         }
       ]
     },

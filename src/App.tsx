@@ -12,54 +12,32 @@ import { DisplayResult } from "./components/DisplayResult";
 import { DisplayWarning } from './components/DisplayWarning';
 
 function App() {
-  // State to handle question to display
-  const [currentQuestion, setCurrentQuestion] = useState<number>(-1); // -1 means show intro page
-
-  // State to track the score from the current question
+  const [currentQuestion, setCurrentQuestion] = useState<number>(-1);
   const [currentScore, setCurrentScore] = useState<number>(-1);
-
-  // State to keep track of the maximum score from any question
   const [maxScore, setMaxScore] = useState<number>(-1);
-
-  // State to hide or show warning
   const [showWarning, setShowWarning] = useState<boolean>(false);
 
-
-  /*
-   TODO:
-    * Fjern maxtest
-    * 
-  */
-
   const handleClick = () => {
-    // User can't move on unless they have selected an option.
     if (currentScore < 0 && currentQuestion > -1 && currentQuestion < questions.question.length) {
-      //alert('Du må velge et svaralternativ før du kan gå videre');
       setShowWarning(true);
       return;
     }
 
 
-
     if (currentQuestion < questions.question.length) {
-      // Increment question
       setCurrentQuestion(currentQuestion + 1);
 
-      // Update max score
       if (currentScore > maxScore) {
         setMaxScore(currentScore);
       }
 
-      // Check if current score is 4, then the guide is finished
       if (currentScore === 4) {
         setCurrentQuestion(questions.question.length);
       }
 
-      // Finally, reset currentScore to -1 so that user can't move on unless they select a new score
       setCurrentScore(-1);
 
     } else {
-      // currentQuestion === questions.question.lenght => Must be on result page
       resetStates();
     }
   }
